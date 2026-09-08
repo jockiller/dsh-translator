@@ -26,7 +26,8 @@ jobs:
 
       - name: Build release package
         run: |
-          PACKAGE_FILE=$(npm pack)
+          npm pack
+          PACKAGE_FILE=$(ls dsh-plugin-translator-*.tgz | head -n 1)
           echo "PACKAGE_FILE=${PACKAGE_FILE}" >> $GITHUB_ENV
           echo "Packaged: ${PACKAGE_FILE}"
 
