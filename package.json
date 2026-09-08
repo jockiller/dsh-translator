@@ -1,6 +1,6 @@
 {
-  "name": "dsh-plugin-translator",
-  "version": "0.1.0",
+  "name": "dsh-translator-pro",
+  "version": "0.1.1",
   "description": "DSH Input Translator: 输入框悬浮快捷翻译与历史找回挂件 (支持当前会话模型 / 智谱 GLM-4-Flash / 自定义 OpenAI 兼容端点)",
   "type": "module",
   "scripts": {
@@ -31,5 +31,25 @@
     "cordis.patch.yml",
     "README.md"
   ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "translator",
+    "translation",
+    "cordis"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jockiller/dsh-translator.git"
+  },
+  "author": "jockiller",
+  "bugs": {
+    "url": "https://github.com/jockiller/dsh-translator/issues"
+  },
+  "homepage": "https://github.com/jockiller/dsh-translator#readme",
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT"
 }

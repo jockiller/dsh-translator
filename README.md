@@ -44,18 +44,26 @@
 
 ## 安装说明
 
-### 方式 1：通过 Release 包安装 (推荐)
+### 方式 1：通过 NPM 安装 (最简)
 
-1. 前往 GitHub Releases 页面下载最新版本的安装包 `dsh-plugin-translator-<version>.tgz`；
+```bash
+dsh plugin --profile web add dsh-translator-pro
+```
+
+刷新 DSH 界面（快捷键 `Cmd + R` 或 `Ctrl + R`）即可加载生效。
+
+### 方式 2：通过 Release 包安装
+
+1. 前往 GitHub Releases 页面下载最新版本的安装包 `dsh-translator-pro-<version>.tgz`；
 2. 打开终端，使用 DSH 命令安装到当前使用的 profile (通常为 `web`)：
 
 ```bash
-dsh plugin --profile web add /path/to/dsh-plugin-translator-<version>.tgz
+dsh plugin --profile web add /path/to/dsh-translator-pro-<version>.tgz
 ```
 
-3. 刷新 DSH 界面（快捷键 `Cmd + R` 或 `Ctrl + R`）即可加载生效。
+3. 刷新 DSH 界面即可加载生效。
 
-### 方式 2：本地源码打包安装
+### 方式 3：本地源码打包安装
 
 ```bash
 git clone git@github.com:jockiller/dsh-translator.git
@@ -65,7 +73,7 @@ cd dsh-translator
 npm pack
 
 # 安装到 DSH
-dsh plugin --profile web add $(pwd)/dsh-plugin-translator-*.tgz
+dsh plugin --profile web add $(pwd)/dsh-translator-pro-*.tgz
 ```
 
 ---
@@ -75,7 +83,7 @@ dsh plugin --profile web add $(pwd)/dsh-plugin-translator-*.tgz
 如需卸载插件，在终端执行以下命令并刷新界面即可：
 
 ```bash
-dsh plugin --profile web rm dsh-plugin-translator
+dsh plugin --profile web rm dsh-translator-pro
 ```
 
 ---

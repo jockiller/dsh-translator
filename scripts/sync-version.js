@@ -21,8 +21,8 @@ function updateFile(filePath) {
     `const DEFAULT_PLUGIN_VERSION = '${version}';`
   );
   content = content.replace(
-    /\/\* dsh-plugin-translator client bundle - v[^*]+ \*\//,
-    `/* dsh-plugin-translator client bundle - v${version} */`
+    /\/\* dsh-translator-pro client bundle - v[^*]+ \*\//,
+    `/* dsh-translator-pro client bundle - v${version} */`
   );
   fs.writeFileSync(filePath, content, 'utf-8');
   console.log(`Synced version v${version} to ${path.relative(rootDir, filePath)}`);
