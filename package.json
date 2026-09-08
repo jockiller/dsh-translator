@@ -1,6 +1,6 @@
 {
   "name": "dsh-plugin-translator",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "DSH Input Translator: 输入框悬浮快捷翻译与历史找回挂件 (支持当前会话模型 / 智谱 GLM-4-Flash / 自定义 OpenAI 兼容端点)",
   "type": "module",
   "scripts": {
