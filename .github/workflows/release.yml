@@ -20,6 +20,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
+          registry-url: 'https://registry.npmjs.org'
 
       - name: Sync version
         run: node scripts/sync-version.js
@@ -37,3 +38,9 @@ jobs:
         with:
           files: ${{ env.PACKAGE_FILE }}
           generate_release_notes: true
+
+      - name: Publish to NPM
+        if: startsWith(github.ref, 'refs/tags/v')
+        run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
